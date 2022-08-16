@@ -91,6 +91,7 @@ namespace bArt.InterviewTask.Controllers
               return Problem("Entity set 'IncidentContext.Contacts'  is null.");
           }
             _context.Contacts.Add(contact);
+            
             try
             {
                 await _context.SaveChangesAsync();
