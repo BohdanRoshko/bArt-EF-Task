@@ -8,5 +8,11 @@
         public string IncidentName { get; set; }
         public string? IncidentDescription { get; set; }
         public ICollection<Account> Accounts { get; set; }
+        public Incident(string? incidentDescription)
+        {
+            
+            IncidentDescription = incidentDescription;
+            
+        }
     }
 }
