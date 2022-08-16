@@ -14,3 +14,6 @@
 - if get account request points to non existing record - returns 404
 - if contact is in the system - updates contact info
 - otherwise - creates new record in db
+
+####PS####
+Git commits history is unavailable for this project as I forgot to use source control while developing :(
