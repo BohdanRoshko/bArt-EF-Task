@@ -5,13 +5,11 @@ namespace bArt.InterviewTask.DataContext
 {
     public class IncidentContext : DbContext
     {
-        //public static readonly string ConnectionString = "DefaultConnection";
         public IncidentContext()
         { }
 
         public IncidentContext(DbContextOptions<IncidentContext> options) : base(options)
         {
-            //Database.EnsureDeleted();
             Database.EnsureCreated();
         }
         public DbSet<Incident> Incidents { get; set; }

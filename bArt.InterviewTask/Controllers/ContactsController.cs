@@ -109,7 +109,7 @@ namespace bArt.InterviewTask.Controllers
                             tmp_contact.AccountName = contact.AccountName;
                             tmp_contact.Account = contact.Account;
                         }
-                        _context.Incidents.Add(new Incident(contact.LastName.ToString()));
+                        _context.Incidents.Add(new Incident(contact.LastName.ToString(),contact.Account));
                         await _context.SaveChangesAsync();
                     }
                     
